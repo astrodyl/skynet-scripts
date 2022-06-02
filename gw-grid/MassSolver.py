@@ -7,7 +7,7 @@ import numpy as np
     models using LALSuite. Output to txt.
 """
 
-def equation_solver(a, b):
+def massSolver(a, b):
 	x = a / (b + 1.)
 	return x, a - x
 
@@ -19,7 +19,7 @@ def createTXT(tms, mrs):
         for i in tms:
             filehandle.write('{}\n'.format(round(10**i, 5)))
             for j in mrs:
-                a, b = equation_solver(10**i, 10**j)
+                a, b = massSolver(10**i, 10**j)
                 filehandle.write('{} '.format(round(a, 5)))
             filehandle.write('\n\n')
 
@@ -29,7 +29,7 @@ def createTXT(tms, mrs):
         for i in tms:
             filehandle.write('{}\n'.format(round(10**i, 5)))
             for j in mrs:
-                a, b = equation_solver(10**i, 10**j)
+                a, b = massSolver(10**i, 10**j)
                 filehandle.write('{} '.format(round(b, 5)))
             filehandle.write('\n\n')
 
