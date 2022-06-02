@@ -1,0 +1,25 @@
+telescope: 	40 foot
+frequency (ghz): 	1.405
+beam (deg): 	1.22335
+1	1	58960.4	0.257927
+1	1	62692.3	0.276378
+1	1	58960.4	0.257927
+1	1	62692.3	0.276378
+
+image processing:
+background subtraction (used = 1), scale (beams) 
+time-delay correction (used = 1), correction (s) 
+rfi cleaning (used = 1), scale (beams) 
+surface modeling minimum scale (beams) 
+
+1	6
+1	0.46976
+1	0.7
+0.333333
+
+center ra (deg): 	0
+center dec (deg): 	-20.4683
+center pixel (x): 	106
+center pixel (y): 	98
+pixel size (beams): 	0.05
+
